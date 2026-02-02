@@ -7,7 +7,7 @@ plan = buildplan(localfunctions);
 % CodeIssues task
 plan("check") = CodeIssuesTask(Results=["results/codeissues.sarif"; ...
                                         "results/codeissues.mat"]);
-
+%% THIS IS A TEST
 % Test task
 tTask = TestTask("tests", ...
     SourceFiles = "code", ...
@@ -34,7 +34,7 @@ proj = currentProject;
 plan("generateSimFun").Inputs = fullfile(proj.RootFolder,"code","*.sbproj");
 plan("generateSimFun").Outputs = fullfile(proj.RootFolder,"code","*.mat");
 plan("test").Inputs = fullfile(proj.RootFolder,"code","*");
-plan("compile").Inputs = fullfile(proj.RootFolder,"code",["*.mat","*.mlapp","graystyle.m"]);
+plan("compile").Inputs = fullfile(proj.RootFolder,"code",["*.mat","*.mlapp","*.m"]);
 plan("compile").Outputs = fullfile(proj.RootFolder,"WebAppArchive");
 
 % Set default task
