@@ -19,19 +19,19 @@ In this workshop, you will:
 ## Table of Contents
 &emsp;[Workshop Requirements](#H_34C2FB57)
  
-&emsp;[Part 1:  Getting the workshop files and configuring GitHub for automated testing and results publishing](#TMP_9d15)
+&emsp;[Part 1:  Getting the workshop files and configuring GitHub for automated testing and results publishing](#TMP_877c)
  
-&emsp;[Part 2:  Generating your first tests](#TMP_2c65)
+&emsp;[Part 2:  Generating your first tests](#TMP_020d)
  
-&emsp;[Part 3:  Finding existing tests and measuring coverage](#TMP_8697)
+&emsp;[Part 3:  Finding existing tests and measuring coverage](#TMP_4b61)
  
-&emsp;[Part 4:  Updating badges, committing our changes, and pushing to GitHub](#TMP_4b51)
+&emsp;[Part 4:  Updating badges, committing our changes, and pushing to GitHub](#TMP_74db)
  
-&emsp;[Part 5:  Create a pull request, watch GitHub Actions automatically test your changes and publish results](#TMP_70e8)
+&emsp;[Part 5:  Create a pull request, watch GitHub Actions automatically test your changes and publish results](#TMP_651a)
  
-&emsp;[Part 6:  Compile the App in the CI workflow and download the artifact](#TMP_4ce6)
+&emsp;[Part 6:  Compile the App in the CI workflow and download the artifact](#TMP_85dd)
  
-&emsp;[Workshop wrap\-up and additional information](#TMP_3265)
+&emsp;[Workshop wrap\-up and additional information](#TMP_230e)
  
 <!-- End Toc -->
 <a id="H_34C2FB57"></a>
@@ -56,7 +56,7 @@ The following steps cover all of the things you will need to successfully comple
 -  The workshop leverages the free repository and CI capabilities offered by GitHub and GitHub Actions 
 -  Go to:  [**https://github.com/signup**](https://github.com/signup) 
 
-<a id="TMP_9d15"></a>
+<a id="TMP_877c"></a>
 
 # Part 1:  Getting the workshop files and configuring GitHub for automated testing and results publishing
 
@@ -308,7 +308,7 @@ Click on the 'Run App' shortcut to start the app in MATLAB:
 ![image_20.png](WorkshopGuide_media/image_20.png)
 
 
-<a id="TMP_2c65"></a>
+<a id="TMP_020d"></a>
 
 # Part 2:  Generating your first tests
 
@@ -529,8 +529,7 @@ Congratulations! You just created multiple tests for your MATLAB code!
 
 It was easier than you thought, right?
 
-
-<a id="TMP_8697"></a>
+<a id="TMP_4b61"></a>
 
 # Part 3:  Finding existing tests and measuring coverage
 
@@ -583,7 +582,7 @@ MATLAB automatically will perform a dependency analysis on `generateSimFun`.
 ![image_41.png](WorkshopGuide_media/image_41.png)
 
 
-After the dependency analysis, you will see 5 tests that are related to `generateSimFun` open in the MATLAB Test Browser.
+After the dependency analysis, you will see several tests that are related to `generateSimFun` open in the MATLAB Test Browser.
 
 
 ![image_42.png](WorkshopGuide_media/image_42.png)
@@ -869,7 +868,7 @@ It looks like we've achieved full statement coverage for [`generateSimFun`](./co
 ![image_65.png](WorkshopGuide_media/image_65.png)
 
 
-<a id="TMP_4b51"></a>
+<a id="TMP_74db"></a>
 
 # Part 4:  Updating badges, committing our changes, and pushing to GitHub
 
@@ -917,7 +916,7 @@ Your badges will now be up\-to\-date and point to your personal repository once 
 **Part 4.2:  Commit our changes to source control**
 
 
-Now that you've added tests, and updated your badges, it's time to commit your changes!
+Now that you've added tests, and updated your badges, it's time to commit your changes !
 
 
 **In the "Project" toolstrip, press "Commit"**
@@ -939,9 +938,12 @@ You have now committed your changes.
 Usually, the next step is to push our changes back to GitHub. This is really easy and straightforward when using Git from a desktop application (e.g., the desktop version of MATLAB). However, since we are pushing our changes from an online application (MATLAB Online), GitHub requires a personal access token to allow MATLAB Online to make changes to your GitHub repository.
 
 
+
+**Part 4.3:  Generating a GitHub Personal Access token to enable MATLAB Online to push our changes to our GitHub repository** 
+
 <a id="TMP_5ea8"></a>
 
-**Part 4.3:  Generating a GitHub Personal Access token to enable MATLAB Online to push our changes to our GitHub repository**
+**(only needed if you use MATLAB Online, SKIP if you use a desktop MATLAB installation !)**
 
 
  ![image_70.png](WorkshopGuide_media/image_70.png)
@@ -1010,17 +1012,19 @@ For this MATLAB Online session, you will need to manually create a personal acce
 
 
 
-**Select "Add Permissions > Contents + Actions" to enable pushing changes to your repository**
+**Select "Add Permissions > Contents + Workflows" to enable pushing changes to your repository**
 
 
 ![image_77.png](WorkshopGuide_media/image_77.png)
 
 
+![image_78.png](WorkshopGuide_media/image_78.png)
+
 
 **Change "Contents" access permissions to "Read and write"**
 
 
-![image_78.png](WorkshopGuide_media/image_78.png)
+![image_79.png](WorkshopGuide_media/image_79.png)
 
 
 <a id="H_2C284494"></a>
@@ -1028,14 +1032,14 @@ For this MATLAB Online session, you will need to manually create a personal acce
 **Press "Generate token"**
 
 
-![image_79.png](WorkshopGuide_media/image_79.png)
+![image_80.png](WorkshopGuide_media/image_80.png)
 
 
 
 **Confirm the creation of the token**
 
 
-![image_80.png](WorkshopGuide_media/image_80.png)
+![image_81.png](WorkshopGuide_media/image_81.png)
 
 
 **Copy your personal access token to your clipboard**
@@ -1050,7 +1054,7 @@ For this MATLAB Online session, you will need to manually create a personal acce
 Any service that generates access token strings will only allow you to see or copy the token string the moment the token is created. As soon as you refresh the page or navigate away, the token string will be hidden forever. This protects you from having your token stolen or copied if someone breaks into your account.
 
 
-![image_81.png](WorkshopGuide_media/image_81.png)
+![image_82.png](WorkshopGuide_media/image_82.png)
 
 
 Your personal access token should start with "`github_pat_`" followed by many alphanumeric characters.
@@ -1067,24 +1071,24 @@ Now let's push your changes to GitHub!
 **In the Projects tab, press the "Push" button**
 
 
-![image_82.png](WorkshopGuide_media/image_82.png)
+![image_83.png](WorkshopGuide_media/image_83.png)
 
 <a id="H_D0E7BA3D"></a>
 
 **Enter your username and paste your personal access token into the MATLAB Online Git dialog and press "OK"**
 
 
-![image_83.svg](WorkshopGuide_media/image_83.svg)
+![image_84.svg](WorkshopGuide_media/image_84.svg)
 
 
 
 At this point, all of your changes will be pushed to GitHub.
 
 
-![image_84.png](WorkshopGuide_media/image_84.png)
+![image_85.png](WorkshopGuide_media/image_85.png)
 
 
-<a id="TMP_70e8"></a>
+<a id="TMP_651a"></a>
 
 # Part 5:  Create a pull request, watch GitHub Actions automatically test your changes and publish results
 
@@ -1100,13 +1104,13 @@ In this section, you will:
 After pushing your new branch to the remote repo, it will automatically suggest to create a pull request:
 
 
- ![image_85.png](WorkshopGuide_media/image_85.png)
+ ![image_86.png](WorkshopGuide_media/image_86.png)
 
 
 You can follow this suggestion and click on the 'compare & pull request" button:
 
 
-![image_86.png](WorkshopGuide_media/image_86.png)
+![image_87.png](WorkshopGuide_media/image_87.png)
 
 
 You can now add a description and press "Create pull request".
@@ -1115,7 +1119,7 @@ You can now add a description and press "Create pull request".
 This will trigger a CI workflow to run our tests on the dev branch:
 
 
-![image_87.png](WorkshopGuide_media/image_87.png)
+![image_88.png](WorkshopGuide_media/image_88.png)
 
 
 <a id="TMP_2df5"></a>
@@ -1140,53 +1144,53 @@ To make this possible, the workshop provides you a pre\-written [GitHub Actions 
 **Click on the check to open the corresponding job run in the Action tab:**
 
 
-![image_88.png](WorkshopGuide_media/image_88.png)
+![image_89.png](WorkshopGuide_media/image_89.png)
 
 
 You will see the different steps included in this job:
 
 
-![image_89.png](WorkshopGuide_media/image_89.png)
+![image_90.png](WorkshopGuide_media/image_90.png)
 
 
 Once the tests ran successfully in the dev branch, you can merge the pull request:
 
 
-![image_90.png](WorkshopGuide_media/image_90.png)
+![image_91.png](WorkshopGuide_media/image_91.png)
 
 
 In the Actions Tab, we will see the list of all job runs including the current one:
 
 
-![image_91.png](WorkshopGuide_media/image_91.png)
+![image_92.png](WorkshopGuide_media/image_92.png)
 
 <a id="H_FBE3C756"></a>
 
 **Dive deeper by selecting the listed workflow item and Select the "build" box**
 
 
-![image_92.png](WorkshopGuide_media/image_92.png)
+![image_93.png](WorkshopGuide_media/image_93.png)
 
 
 
 **Observe the GitHub Actions log as your build is running**
 
 
-![image_93.png](WorkshopGuide_media/image_93.png)
+![image_94.png](WorkshopGuide_media/image_94.png)
 
 
 
 The icon next to the build reflects the result of the build. A green check mark means the build ran successfully.
 
 
-![image_94.png](WorkshopGuide_media/image_94.png)
+![image_95.png](WorkshopGuide_media/image_95.png)
 
 
 
 Another place you can see an indication of your passing build is on your repository home page.
 
 
-![image_95.png](WorkshopGuide_media/image_95.png)
+![image_96.png](WorkshopGuide_media/image_96.png)
 
 
 *Note:*  You may need to refresh your browser a few times or use "Shift+F5" for the status to update
@@ -1219,13 +1223,13 @@ The badges on your repository's home page offer an easy way to:
 **View your test report by selecting the "Open Test Report" badge**
 
 
-![image_96.png](WorkshopGuide_media/image_96.png)
+![image_97.png](WorkshopGuide_media/image_97.png)
 
 
 The test report looks like this:
 
 
-![image_97.png](WorkshopGuide_media/image_97.png)
+![image_98.png](WorkshopGuide_media/image_98.png)
 
 
 <a id="H_C2E2595D"></a>
@@ -1233,19 +1237,19 @@ The test report looks like this:
 **View your code coverage report by selecting the "Open Code Coverage Report" badge**
 
 
-![image_98.png](WorkshopGuide_media/image_98.png)
+![image_99.png](WorkshopGuide_media/image_99.png)
 
 
 The code coverage report looks like this:
 
 
-![image_99.png](WorkshopGuide_media/image_99.png)
+![image_100.png](WorkshopGuide_media/image_100.png)
 
 
 
 Now anyone that visits your repository can immediately see the quality of your code, explore your test and code coverage results, and will have more confidence in the code you are writing!
 
-<a id="TMP_4ce6"></a>
+<a id="TMP_85dd"></a>
 
 # Part 6:  Compile the App in the CI workflow and download the artifact
 
@@ -1267,31 +1271,31 @@ In this section, you will:
 Open the settings tab
 
 
-![image_100.png](WorkshopGuide_media/image_100.png)
+![image_101.png](WorkshopGuide_media/image_101.png)
 
 
 On the left side, choose "Secrets and variables" \-> Actions
 
 
-![image_101.png](WorkshopGuide_media/image_101.png)
+![image_102.png](WorkshopGuide_media/image_102.png)
 
 
 Let's add a new repository secret:
 
 
-![image_102.png](WorkshopGuide_media/image_102.png)
+![image_103.png](WorkshopGuide_media/image_103.png)
 
 
 Create now a new secret named MLM\_LICENSE\_TOKEN by pasting the secret we provided for this workshop:
 
 
-![image_103.png](WorkshopGuide_media/image_103.png)
+![image_104.png](WorkshopGuide_media/image_104.png)
 
 
 It should now look like this:
 
 
-![image_104.png](WorkshopGuide_media/image_104.png)
+![image_105.png](WorkshopGuide_media/image_105.png)
 
 
 **Part 6.2:  Modify the CI workflow to include a compilation step**
@@ -1303,10 +1307,10 @@ Let's now activate the compilation step in our CI workflow.
 For this, go back to MATLAB and open the ci.yml file using the project shortcut:
 
 
-![image_105.png](WorkshopGuide_media/image_105.png)
+![image_106.png](WorkshopGuide_media/image_106.png)
 
 
-Change line 44 from
+Change line 94 from
 
 ```
           tasks: test  # change to compile
@@ -1341,7 +1345,7 @@ There, start a pull request!
 Once the `Deploy/ Release (main)` job is done, a new artifact is available at the bottom of the run page:
 
 
-![image_106.png](WorkshopGuide_media/image_106.png)
+![image_107.png](WorkshopGuide_media/image_107.png)
 
 
 You can now download the CTF file and upload it to your Web App Server using your github username and the password `BMS2026`
@@ -1349,7 +1353,7 @@ You can now download the CTF file and upload it to your Web App Server using you
 
 [https://vdi\-wd1ah2\-348.dhcp.mathworks.com:9999/webapps/home/login.html](https://vdi-wd1ah2-348.dhcp.mathworks.com:9999/webapps/home/login.html)
 
-<a id="TMP_3265"></a>
+<a id="TMP_230e"></a>
 
 # Workshop wrap\-up and additional information
 
