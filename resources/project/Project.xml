@@ -220,6 +220,30 @@
             <File Location="image_10.png">
                 <Info/>
             </File>
+            <File Location="image_100.png">
+                <Info/>
+            </File>
+            <File Location="image_101.png">
+                <Info/>
+            </File>
+            <File Location="image_102.png">
+                <Info/>
+            </File>
+            <File Location="image_103.png">
+                <Info/>
+            </File>
+            <File Location="image_104.png">
+                <Info/>
+            </File>
+            <File Location="image_105.png">
+                <Info/>
+            </File>
+            <File Location="image_106.png">
+                <Info/>
+            </File>
+            <File Location="image_107.png">
+                <Info/>
+            </File>
             <File Location="image_11.png">
                 <Info/>
             </File>
@@ -418,10 +442,10 @@
             <File Location="image_70.png">
                 <Info/>
             </File>
-            <File Location="image_71.svg">
+            <File Location="image_71.png">
                 <Info/>
             </File>
-            <File Location="image_72.svg">
+            <File Location="image_72.png">
                 <Info/>
             </File>
             <File Location="image_73.png">
@@ -436,13 +460,13 @@
             <File Location="image_76.png">
                 <Info/>
             </File>
-            <File Location="image_77.svg">
+            <File Location="image_77.png">
                 <Info/>
             </File>
             <File Location="image_78.png">
                 <Info/>
             </File>
-            <File Location="image_79.svg">
+            <File Location="image_79.png">
                 <Info/>
             </File>
             <File Location="image_8.png">
@@ -460,7 +484,7 @@
             <File Location="image_83.png">
                 <Info/>
             </File>
-            <File Location="image_84.png">
+            <File Location="image_84.svg">
                 <Info/>
             </File>
             <File Location="image_85.png">
@@ -497,6 +521,18 @@
                 <Info/>
             </File>
             <File Location="image_95.png">
+                <Info/>
+            </File>
+            <File Location="image_96.png">
+                <Info/>
+            </File>
+            <File Location="image_97.png">
+                <Info/>
+            </File>
+            <File Location="image_98.png">
+                <Info/>
+            </File>
+            <File Location="image_99.png">
                 <Info/>
             </File>
         </File>
